@@ -23,9 +23,20 @@
                 'nav-color':'#737373',
                 'second-btn-bg':'#ABEF5F80',
                 'third-btn-bg':'#ABEF5F33',
+                'soft-pink':'#E7C1D3',
+                'soft-yellow':'#EFDA6E',
+                'soft-green':'#A4DAC3',
+                'soft-blue':'#77AAEA',
+                'bg-f4':'#f4f4f4',
+                'footer-text':'#e9e9e9',
+                'des-color':'#737373',
+
               },
               fontFamily:{
                 manrope:["Manrope", 'sans-serif'],
+              },
+              screens:{
+                'lg':'976px',
               },
             }
           }
@@ -38,8 +49,8 @@
         <!-- nav section  -->
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <div class="dropdown ">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-red-50 w-3 h-3 rounded-full p-4 -z-10">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     class="h-5 w-5"
@@ -81,33 +92,32 @@
                 <li><a>Contact Us</a></li>
               </ul>
             </div>
-            <div class="navbar-end">
+            <div class="navbar-end hidden sm:block">
                 <div class="flex justify-center items-center gap-5">
-                    <div class="w-7 h-7 rounded-full bg-red-50  flex justify-center items-center">
+                    <div class="w-7 h-7 rounded-full bg-bg-f4  flex justify-center items-center">
                         <i class="fa-solid fa-magnifying-glass text-base text-nav-color"></i>
                     </div>
-                    <div class="w-7 h-7 rounded-full bg-red-50  flex justify-center items-center">
+                    <div class="w-7 h-7 rounded-full bg-bg-f4  flex justify-center items-center">
                         <i class="fa-solid fa-cart-shopping  text-base text-nav-color "></i>
                     </div>
                     <div>
-                        <button class="px-8 py-4 text-black text-xl font-extrabold rounded-full bg-green">
+                        <button class="px-5 py-3 text-black text-xl font-extrabold rounded-full bg-green">
                         Book Consult
-                        <i class="fa-solid fa-arrow-right -rotate-45 h-6 w-6 bg-black text-white rounded-full text-base "></i>
-                  </button>
+                        <i class="fa-solid fa-arrow-right -rotate-45 h-6 w-6 bg-black text-nav-color rounded-full text-base "></i>
+                       </button>
                     </div>
                 </div>
                 
             </div>
         </div>
         +<!-- banner section  -->
-        <div class="hero ">
+        <div class="hero">
             <div class="hero-content text-center">
               <div class="flex flex-col justify-center items-center space-y-6">
                 <img src="images/banner.png" alt="">
-                <h1 class="text-6xl font-extrabold ">A barn house of this design has a <br> striking appearance</h1>
+                <h1 class="lg:text-6xl text-4xl font-extrabold ">A barn house of this design has a <br> striking appearance</h1>
                 <p class="py-6">
-                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.
-                </p>
+                  "Welcome to Elite Homes, where creativity meets functionality. We specialize in designing custom homes that reflect your <br> style, needs, and vision. Let’s create a space you’ll love to call home."                </p>
                 <button class="px-5 py-3 text-black text-xl font-extrabold rounded-full bg-second-btn-bg">
                     Book Consult
                     <i class="fa-solid fa-arrow-right -rotate-45 h-6 w-6 bg-green text-nav-color rounded-full text-base "></i>
@@ -121,13 +131,179 @@
      
     <!-- main start  -->
      <main>
+        <section class="bg-bg-f4  px-5 ">
+            <div class="flex flex-col lg:flex-row container mx-auto lg:py-16  my-10">
+                <div class="flex-1 space-y-6">
+                    <img class="  lg:relative lg:-left-12 hidden sm:block" src="images/Vector.png" alt="">
+                    <button class="bg-white rounded-full py-1 px-2"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+                    <h1 class="font-bold text-4xl">We design thoughtful, <br> liveable spaces</h1>
+                    <p class="text-base font-medium text-des-color"> Homes that blend beauty with functionality. Every space is crafted to reflect <br> your style, creating environment where comfort and inspiration meet.".</p>
+                    <div class="flex gap-3 items-center bg-white rounded-2xl px-4 py-5 lg:w-4/5">
+                        <div>
+                            <img src="images/commercial.png" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-extrabold">Commercial</h3>
+                            <p class="font-medium text-base text-des-color">"Designing functional, inspiring spaces that <br> elevate your business and brand."</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 items-center  bg-white rounded-2xl px-4 py-5 lg:w-4/5">
+                        <div>
+                            <img src="images/residential.png" alt="">
+                        </div>
+                        <div class="space-y-2">
+                            <h3 class="text-xl font-extrabold">Residential</h3>
+                            <p class="font-medium text-base text-des-color">Creating personalized, functional homes that reflect <br> your unique lifestyle and vision.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="py-7">
+                    <img class="lg:w-full" src="images/Rectangle.png" alt="">
+                </div>
+            </div>
+            <!-- how we work  -->
+            <div class="lg:container mx-auto py-3 lg:py-16">
+              <div class="text-center space-y-4">
+                <button class="bg-white rounded-full py-1 px-3"> <i class="fa-solid fa-arrow-right"></i> How we works</button>
+                <h1 class="text-4xl font-bold">Our Works Process</h1>
+                <p class="text-base font-medium text-des-color">Our design process is collaborative, focusing on your needs and vision to create functional, stylish <br>spaces that feel like home.</p>
+              </div>
+              <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-6 py-8 gap-4">
+                <div class="card   bg-soft-pink">
+                  <div class="card-body  space-y-2 ">
+                    <img class="h-[50px] w-[50px]" src="images/concept.png" alt="">
+                    <h2 class="card-title font-extrabold text-xl">Concept</h2>
+                    <p class="text-base font-medium text-des-color">Creating personalized, functional designs, comfort, and innovation.</p>
+                  </div>
+                </div>
+                <div class="card   bg-soft-yellow">
+                  <div class="card-body space-y-2 ">
+                    <img class="h-[50px] w-[50px]" src="images/flow-chart.png" alt="">
+                    <h2 class="card-title font-extrabold text-xl">Design Process</h2>
+                    <p class="text-base font-medium text-des-color">Collaborative process focused on creativity, and your unique vision.</p>
+                  </div>
+                </div>
+                <div class="card   bg-soft-green">
+                  <div class="card-body space-y-2">
+                    <img class="h-[50px] w-[50px]" src="images/vision.png" alt="">
+                    <h2 class="card-title font-extrabold text-xl">Super Vision</h2>
+                    <p class="text-base font-medium text-des-color">Guiding every project with expertise, and a passion for design.</p>
+                  </div>
+                </div>
+                <div class="card   bg-soft-blue">
+                  <div class="card-body space-y-2">
+                    <img class="h-[50px] w-[50px]" src="images/budget-planning.png" alt="">
+                    <h2 class="card-title font-extrabold text-xl">Budget Planning</h2>
+                    <p class="text-base font-medium text-des-color">Designing within budget while ensuring quality and functionality.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </section>
 
+        <section class="container mx-auto lg:my-24 my-8">
+          <div class="text-center space-y-4">
+            <button class="bg-third-btn-bg rounded-full py-1 px-3"> <i class="fa-solid fa-arrow-right"></i> Explore our Latest works</button>
+            <h1 class="text-4xl font-bold">Our Latest Portfolio</h1>
+            <p class="text-base font-medium text-des-color">Explore our portfolio of innovative, custom-designed homes that blend creativity, functionality, <br> and craftsmanship to bring your vision to life</p>
+          </div>
+          <div class="grid grid-cols-1  lg:grid-cols-5 gap-7 py-14 m-4">
+              <div class="flex flex-col lg:flex-row  lg:items-center lg:gap-5 lg:col-span-3 border lg:p-5 p-3 rounded-xl">
+                <div>
+                    <img class="w-screen lg:w-auto" src="images/img1.png" alt="">
+                </div>
+                <div>
+                    <h1 class="text-3xl font-extrabold">Commercial</h1>
+                    <p class="text-base font-medium text-des-color">Our portfolio features innovative commercial designs that enhance functionality, brand identity, and customer experience, creating <br> impactful and inspiring spaces.</p>
+                    <button class=" py-2 text-black text-xl font-bold rounded-full bg-white">
+                      Book Consult
+                      <i class="fa-solid fa-arrow-right -rotate-45 h-6 w-6 bg-green text-nav-color rounded-full text-base "></i>
+                    </button>
+                </div>
+              </div>
+              <div class="lg:col-span-2  border lg:p-5 p-3 rounded-xl flex lg:justify-center flex-1">
+                <img class="w-screen lg:w-auto " src="images/img2.png" alt="">
+              </div>
+              <div class="border p-3 lg:p-5 rounded-xl">
+               <img class="w-screen lg:w-auto" src="images/img3.png" alt="">
+              </div>
+              <div class="flex flex-col lg:flex-row lg:items-center gap-5 lg:col-span-3 border p-5  rounded-xl">
+                <div>
+                    <img class="w-screen lg:w-auto" src="images/img4.png" alt="">
+                </div>
+                <div class="">
+                    <h1 class="text-3xl font-extrabold">Residential</h1>
+                    <p class="text-base font-medium text-des-color">Our residential portfolio showcases thoughtful designs that balance  modern aesthetics, comfort, and functionality, creating  homes <br> that suit every lifestyle.</p>
+                    <button class=" py-2 text-black text-xl font-bold rounded-full bg-white">
+                      Book Consult
+                      <i class="fa-solid fa-arrow-right -rotate-45 h-6 w-6 bg-green text-nav-color rounded-full text-base "></i>
+                    </button>
+                </div>
+              </div>
+              <div class="border lg:p-5 p-3 rounded-xl m-2">
+                <img class="w-screen lg:w-auto" src="images/img5.png" alt="">
+              </div>
+            <div>
+         </div>
+        </div>
+      </section>
+
+      <!-- form section --->
+       <section class="bg-[url('images/bg.jpg')] bg-no-repeat bg-cover py-28">
+         <div class="lg:container mx-auto  ">
+          <div class="text-center space-y-4 pb-7">
+            <button class="bg-third-btn-bg rounded-full py-1 px-3"> <i class="fa-solid fa-arrow-right"></i> Let’s Connect</button>
+            <h1 class="text-4xl font-bold">Let’s Discuss Next Project</h1>
+            <p class="text-base font-medium text-des-color">Let's discuss your project! We’ll collaborate closely to bring your vision to life, ensuring every <br> detail aligns with your needs.</p>
+          </div>
+          <div class="flex flex-col justify-center items-center gap-5 max-w-md mx-auto">
+              <div class="flex flex-col lg:flex-row gap-5">
+                <input class="py-3 px-5 rounded-full lg:w-[473px] w-[350px]" type="text" name="" id="" placeholder="First Name*">
+                <input class="py-3 px-5 rounded-full lg:w-[473px] w-[350px]" type="text" name="" id="" placeholder="Last Name*">
+              </div>
+              <div class="flex flex-col lg:flex-row gap-5">
+                <input class="py-3 px-5 rounded-full lg:w-[473px] w-[350px]" type="text" name="" id="" placeholder="Phone Number*">
+                <input class="py-3 px-5 rounded-full lg:w-[473px] w-[350px]" type="text" name="" id="" placeholder="Email Address">
+              </div>
+              <div class="">
+                <textarea class=" h-[240px] lg:w-[970px] rounded-3xl w-[350px] p-3" name="" id="" placeholder="Write your message here"></textarea>
+              </div>
+              <button class="px-5 py-3 text-black text-xl font-extrabold rounded-full bg-green lg:w-[970px] w-[350px]">
+                Send Mail
+                <i class="fa-solid fa-arrow-right -rotate-45 h-6 w-6 bg-black text-nav-color rounded-full text-base "></i>
+               </button>
+          </div>
+         </div>
+       </section>
      </main>
     <!-- main end -->
 
     <!-- footer start  -->
-     <footer>
-
+     <footer class="bg-black">
+        <div class="space-y-8 text-center lg:py-24 p-3">
+          <div class="">
+            <div class="flex justify-center items-center gap-2">
+              <div class="bg-green rounded-full h-[30px] w-[30px] flex justify-center items-center">
+                  <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+              </div>
+              <div>
+                  <a class="btn btn-ghost text-3xl font-extrabold pl-0  text-footer-text">Rinterio</a>
+              </div>
+            </div>
+            <p class="text-base font-medium text-des-color text-des-color">Thank you for visiting our website! We’re excited to help you design your dream home. <br> Let’s create something extraordinary together!.</p>
+          </div>
+            <nav class="flex gap-x-16 gap-y-6 justify-center flex-col lg:flex-row  text-footer-text">
+              <a class="link link-hover ">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <button class="px-5 py-3 text-black text-xl font-extrabold rounded-full bg-green">
+              Book Consult
+              <i class="fa-solid fa-arrow-right -rotate-45 h-6 w-6 bg-black text-nav-color rounded-full text-base "></i>
+            </button>
+        </div>
      </footer>
     <!-- footer start  -->
 
