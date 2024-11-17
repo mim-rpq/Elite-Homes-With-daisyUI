@@ -31,6 +31,7 @@
                 'footer-text':'#e9e9e9',
                 'des-color':'#737373',
                 'news-bg':'#F4F4F4',
+                'rating':'#E77C40',
 
               },
               fontFamily:{
@@ -336,6 +337,86 @@
             </div>
           </div>
        </section>
+
+        <!-- reviews section  -->
+      <section class="py-24 container mx-auto p-3">
+        <div class="text-center space-y-4 pb-12 ">
+          <button class="bg-third-btn-bg rounded-full py-1 px-3"> <i class="fa-solid fa-arrow-right"></i>View More</button>
+          <h1 class="text-4xl font-bold">What Our client Says</h1>
+          <p class="text-base font-medium text-des-color">Our clients' satisfaction is our priority. Here's what they have to say: ‘Exceptional design, attention to detail, <br> and a seamless experience. Our dream home exceeded expectations—thank you for bringing it to life!</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-11">
+          <!-- card 1 -->
+          <div class="card bg-base-100  border ">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/client-1.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-2">
+              <p class="text-des-color"><em>"Fantastic experience! The team understood my vision perfectly, and the design exceeded expectations. Highly recommend for anyone seeking custom home design!"</em></p>
+                <div class="rating flex gap-2">
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" checked="checked" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" checked="checked" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" />
+                </div>
+              <div class="card-actions">
+                <a class="text-sky-600 font-bold" href="#">Elara Winters <small class="text-des-color">-Ireland</small></a>
+              </div>
+              <p class="font-bold text-lg">Biologist</p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card bg-base-100   border ">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/client-2.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-2">
+              <p class="text-des-color"><em>"The process was seamless from start to finish. The designs were tailored to my needs—couldn't be happier!"</em></p>
+                <div class="rating flex gap-2">
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" checked="checked" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" checked="checked" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" />
+                </div>
+              <div class="card-actions">
+                <a class="text-sky-600 font-bold" href="#">Innian Hale <small class="text-des-color">-Spain</small></a>
+              </div>
+              <p class="font-bold text-lg">Software Engineer </p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card bg-base-100   border ">
+            <figure class="px-10 pt-10">
+              <img
+                src="images/client-3.png"
+                alt="Shoes"
+                class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center space-y-2">
+              <p class="text-des-color"><em>"Incredible service and stunning designs! They truly listened to my vision and delivered a beautiful, functional home."</em></p>
+                <div class="rating flex gap-2">
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" checked="checked" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" checked="checked" />
+                  <input type="radio" name="rating-4" class="mask mask-star-2 bg-rating" />
+                </div>
+              <div class="card-actions">
+                <a class="text-sky-600 font-bold" href="#">Zora Kade<small class="text-des-color">-Japan</small></a>
+              </div>
+              <p class="font-bold text-lg">Journalist</p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- form section --->
        <section class="bg-[url('images/bg.jpg')] bg-no-repeat bg-cover py-28">
